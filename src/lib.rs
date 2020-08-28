@@ -1,6 +1,8 @@
 // rust-hwid
 // (c) 2020 tilda, under MIT license
+#[cfg(target_os = "windows")]
 extern crate winreg;
+#[cfg(target_os = "windows")]
 use winreg::enums::HKEY_LOCAL_MACHINE;
 
 #[cfg(target_os = "windows")]
